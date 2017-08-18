@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css'
 // import Graph from './components/Graph'
 import Outliner from './components/Outliner'
-import Scene from './components/Scene'
+import Scene2 from './components/Scene2'
+import TestComp from './components/TestComp'
 import Properties from './components/Properties'
 
 class App extends Component {
@@ -37,7 +38,9 @@ class App extends Component {
         return (
             <div>
                 { /**<Outliner /> */}
-                <Scene height={ this.state.height -5 } width={ this.state.width } />
+                <Scene2 height={ this.state.height -5 } width={ this.state.width } /> 
+                
+                { /**<TestComp height={ this.state.height -5 } width={ this.state.width }/>*/}
                 { /** <Properties /> */}
             </div>
         );

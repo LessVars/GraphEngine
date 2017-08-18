@@ -49,6 +49,7 @@ export default class Scene extends React.Component{
             <div>
                 <ContextMenuTrigger id="some_unique_identifier" holdToDisplay={ -1 }>
                     <ReactSVGPanZoom  width={this.props.width} height={this.props.height}>
+
                         <svg 
                             height = { 800 } 
                             width  = { 1440  } 

@@ -1,15 +1,15 @@
 import React from 'react'
-import {ReactSVGPanZoom, TOOL_NONE, TOOL_AUTO, TOOL_PAN, TOOL_ZOOM_IN, TOOL_ZOOM_OUT} from 'react-svg-pan-zoom';
+import SvgMap from './SvgMap'
+import PropTypes from 'prop-types'
 
+class Graph extends React.Component {
 
-export default class Graph extends React.Component{
-
-    render(){
-        return(
-        <div>
-        xx
-        </div>
-        )
+    render() {
+      return (
+            <g>
+                { this.props.nodes.map(node => { return node } ) }
+            </g>
+      );
     }
-}
-
+  }
+  export default SvgMap(Graph);
